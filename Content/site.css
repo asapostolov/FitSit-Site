@@ -1,0 +1,27 @@
+﻿#logo {
+    height:5em;
+    width:10em;
+    margin: 10px 0;
+    border-radius:5px;
+}
+.percent-tag {
+    text-align:center;
+}
+.percent-tag h2 {
+    margin:0;
+    margin-bottom:5px;
+    font-size:4em;
+    
+}
+h1 {
+    font-size: 4em;
+    text-align:center;
+    margin: 0;
+    margin-bottom:30px;
+}
+#home {
+    width:610px;
+    height:360px;
+}
+
+

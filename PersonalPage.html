@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Personal Page - Ivan Petrov</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="Content/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <img  src="img/logo.png" id="logo" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="span3 text-center">
+                <img src="http://placesheen.com/400/500" />
+            </div>
+            <div class="span9">
+                <div class="row">
+                    <div class="span9">
+                        <h1>Armin Van Burren</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span3 percent-tag">
+                        <h2>25</h2>
+                        <strong>Hours Sitting</strong>
+                    </div>
+                    <div class="span3 percent-tag text-error">
+                        <h2>46%</h2>
+                        <strong>Percent in Right Position</strong>
+                    </div>
+                    <div class="span3 percent-tag text-success">
+                        <h2>12% +</h2>
+                        <strong>ChangeSince Last week</strong>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span9">
+                        <ul class="nav nav-tabs" id="myTab">
+                          <li class="active"><a href="#home">Monday</a></li>
+                          <li><a href="#">Tuesday</a></li>
+                          <li><a href="#">Wednesday</a></li>
+                          <li><a href="#">Thirsday</a></li>
+                          <li><a href="#">Friday</a></li>
+                          <li><a href="#">Saturday</a></li>
+                          <li><a href="#">Sunday</a></li>
+                        </ul>
+                        <div class="tab-content">
+                          <div class="tab-pane active" id="home">
+                               <div id="chart_div" style="width: 600px; height: 350px;"></div>
+
+
+                          </div>
+                          <div class="tab-pane" id="profile">...</div>
+                          <div class="tab-pane" id="messages">...</div>
+                          <div class="tab-pane" id="settings">...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("visualization", "1", { packages: ["corechart"] });
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['Percent', 'Right Position'],
+              ['9:15', 98],
+              ['9:30', 98],
+              ['9:45', 75],
+              ['10:00', 63],
+              ['10:15', 64],
+              ['10:30', 60],
+              ['10:45', 55],
+              ['11:00', 58],
+              ['11:15', 59],
+              ['11:30', 66],
+              ['11:45', 85],
+              ['12:00', 95],
+              ['12:15', 84],
+              ['12:30', 95],
+              ['12:45', 95],
+              ['13:00', 75],
+              ['13:15', 75],
+              ['13:30', 65],
+              ['13:45', 65],
+              ['14:00', 65],
+              ['14:15', 57],
+              ['14:30', 57],
+              ['14:45', 57],
+              ['15:00', 57],
+              ['15:15', 43],
+              ['15:30', 43],
+              ['15:45', 43],
+              ['16:00', 43],
+              ['16:15', 43],
+              ['16:30', 55],
+              ['16:45', 55],
+              ['17:00', 55],
+              ['17:15', 55],
+              ['17:30', 68],
+              ['17:45', 73],
+              ['18:00', 85],
+              ['18:15', 85],
+              ['18:30', 85],
+              ['18:43', 90],
+            ]);
+
+            var options = {
+                title: 'Daily Activity',
+                vAxis: { maxValue: 100 }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+    </script>
+</body>
+</html>
