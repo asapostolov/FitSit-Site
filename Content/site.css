@@ -11,8 +11,12 @@
     margin:0;
     margin-bottom:5px;
     font-size:4em;
+
     
 }
+    .percent-tag i {
+        font-size:1em;
+    }
 h1 {
     font-size: 4em;
     text-align:center;
@@ -22,6 +26,9 @@ h1 {
 #home {
     width:610px;
     height:360px;
+}
+#photo {
+    border-radius:15px;
 }
 
 
