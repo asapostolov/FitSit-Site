@@ -19,9 +19,11 @@
     }
 h1 {
     font-size: 4em;
+    line-height:0.9em;
     text-align:center;
     margin: 0;
-    margin-bottom:30px;
+    margin-bottom:20px;
+    margin-top:25px;
 }
 #home {
     width:610px;
