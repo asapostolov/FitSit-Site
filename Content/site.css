@@ -17,6 +17,11 @@
     .percent-tag i {
         font-size:1em;
     }
+
+.arrow-person {
+    font-weight:bold;
+    font-family: monospace;
+}
 h1 {
     font-size: 4em;
     line-height:0.9em;
